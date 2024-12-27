@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const page=()=>{
@@ -7,7 +8,9 @@ const page=()=>{
          <div className="container mx-auto py-10">
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <Link href={'/index/use-props'}>
                 <div className="text 3xl text-black text-medium bg-pink-300 rounded-sm flex justify-center items-center  py-10 px-10">Use Props</div>
+                </Link>
                 <div className="text 3xl text-black text-medium bg-yellow-300 rounded-sm flex justify-center items-center  py-10 px-10">How To Print PDF</div>
                 <div className="text 3xl text-black text-medium bg-sky-300 rounded-sm flex justify-center items-center  py-10 px-10">CRUD Opertion</div>
                 <div className="text 3xl text-black text-medium bg-red-300 rounded-sm flex justify-center items-center  py-10 px-10">Language Shifting</div>
